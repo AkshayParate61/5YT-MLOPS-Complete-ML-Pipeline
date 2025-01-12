@@ -119,7 +119,7 @@ def save_metrics(metrics: dict, file_path: str) -> None:
 def main():
     try:
         # params = load_params(params_path='params.yaml')
-        clf = load_model('./models/model.pkl')
+        clf = load_model('./models/model.pkl')    ###
         test_data = load_data('./data/processed/test_tfidf.csv')
 
         X_test = test_data.iloc[:, :-1].values
@@ -143,3 +143,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
